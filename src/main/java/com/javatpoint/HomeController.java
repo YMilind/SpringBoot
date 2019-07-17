@@ -6,7 +6,7 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.stereotype.Controller;  
 @Controller  
 public class HomeController {  
-    @RequestMapping("/")  
+  /*  @RequestMapping("/")  
     public String index(){  
         return"index";  
     }  
@@ -16,5 +16,6 @@ public class HomeController {
 modelAndView.setViewName("user-data");      
 modelAndView.addObject("user", user);    
 return modelAndView;  
-    }  
+    }  */
+	//commented to run JPA
 } 
