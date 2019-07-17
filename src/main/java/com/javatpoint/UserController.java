@@ -16,12 +16,15 @@ public class UserController {
         return userService.getAllUsers();  
     }     
     @RequestMapping(value="/add-user", method=RequestMethod.POST)  
-    public void addUser(@RequestBody UserRecord userRecord){  
+    public String addUser(@RequestBody UserRecord userRecord){  
         userService.addUser(userRecord);  
+        return "Data Saved Successfully" ;
     }  
     @RequestMapping(value="/user/{id}", method=RequestMethod.GET)  
     public Optional<UserRecord> getUser(@PathVariable String id){  
-        return userService.getUser(id);  
+       //    	return userService.getUser(id);
+    	
+    	return userService.getUser(id);
     }  
 }
 
