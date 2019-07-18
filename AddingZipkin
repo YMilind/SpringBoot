@@ -1,0 +1,14 @@
+To add zipkin to distributed tracing to springboot project :Add below dependencies
+
+<dependency>
+    <groupId>io.zipkin.java</groupId>
+    <artifactId>zipkin-server</artifactId>
+    <version>2.11.7</version>
+</dependency>
+<dependency>
+    <groupId>io.zipkin.java</groupId>
+    <artifactId>zipkin-autoconfigure-ui</artifactId>
+    <version>2.11.7</version>
+</dependency>
+
+Add @EnableZipkinServer to the main class after importing -  import zipkin.server.EnableZipkinServer;
