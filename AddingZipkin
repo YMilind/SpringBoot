@@ -12,3 +12,8 @@ To add zipkin to distributed tracing to springboot project :Add below dependenci
 </dependency>
 
 Add @EnableZipkinServer to the main class after importing -  import zipkin.server.EnableZipkinServer;
+
+To the application.properties 
+Add :
+spring.application.name=zipkin-server
+server.port=9411
