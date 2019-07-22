@@ -6,7 +6,7 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.stereotype.Controller;  
 @Controller  
 public class HomeController {  
-    @RequestMapping("/")  
+    @RequestMapping("/test")  
     public String index(){  
         return"index";  
     }  
